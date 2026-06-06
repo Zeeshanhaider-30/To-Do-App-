@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zeeshan's Premium Workspace</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="dashboard-wrapper">
+        
+        <header class="dashboard-header">
+            <div class="welcome-user">
+                <div class="avatar">ZH</div>
+                <div>
+                    <h1>Welcome, Zeeshan Haider</h1>
+                    <p id="current-date" class="date-string">Loading today's schedule...</p>
+                </div>
+            </div>
+            <div class="status-badge">
+                <span class="pulse-dot"></span> Workspace Active
+            </div>
+        </header>
+
+        <div class="quote-card">
+            <span class="quote-icon">“</span>
+            <p class="quote-text">Productivity is never an accident. It is always the result of a commitment to excellence, intelligent planning, and focused effort.</p>
+            <span class="quote-author">— Paul J. Meyer</span>
+        </div>
+
+        <main class="app-card">
+            
+            <form id="todo-form" class="input-group">
+                <input type="text" id="todo-input" placeholder="Assign a new objective or task..." required maxlength="80">
+                <button type="submit" class="btn-primary" aria-label="Add task">
+                    <span>Create Task</span>
+                    <span class="btn-icon">➕</span>
+                </button>
+            </form>
+
+            <div class="tasks-container">
+                <div class="section-title">
+                    <h3>Current Objectives</h3>
+                </div>
+                <ul id="todo-list">
+                    </ul>
+            </div>
+            
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
